@@ -10,7 +10,10 @@ app.use(express.json())
 app.use(cors())
 app.use('/api', router)
 
-notebooksRoutes(router)
+app.get('/', (req, res) => {
+    res.send('Hello, this is the home page.')
+})
 
+notebooksRoutes(router)
 
 export default app
