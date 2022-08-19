@@ -12,7 +12,7 @@ Regras do teste:
 
 No terminal, clone o projeto:
 ```
-git clone https://github.com/JoseLucasapp/Web-scraping-test.git
+git clone https://github.com/JoseLucasapp/Web-scraping-test.git && cd Web-scraping-test
 ```
 
 ### Para inicializar o projeto:
