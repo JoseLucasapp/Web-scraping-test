@@ -4,7 +4,12 @@ import { checkParams } from "../helpers/utils"
 export const getNotebooksData = async () => {
     const webSiteUrl = 'https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops'
 
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({
+        'args': [
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
+        ]
+    })
 
     const page = await browser.newPage()
 
